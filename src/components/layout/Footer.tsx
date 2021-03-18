@@ -14,8 +14,7 @@ function FooterLayout(props: IProps) {
         <Nav>
           <Link href="/" passHref>
             <StyledLink>
-              <b>Powered by{' '}
-                <img src="/vercel.svg" alt="Vercel Logo"/></b>
+              <b className="btn-blue">Powered by{' '}</b>
             </StyledLink>
           </Link>
         </Nav>

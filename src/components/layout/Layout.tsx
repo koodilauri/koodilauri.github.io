@@ -19,7 +19,7 @@ export const Layout = () => {
       </h1>
 
       <p>
-        <code>Portfolio 2021</code>
+        <div className="code">Portfolio 2021</div>
       </p>
       <Portfolio/>
     </main>

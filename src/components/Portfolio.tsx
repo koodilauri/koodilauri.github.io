@@ -13,7 +13,7 @@ function PortfolioLayout(props: IProps) {
   const { className } = props
   return (
     <PortfolioContainer className={className}>
-      <PortfolioWrapper>
+      <PortfolioWrapper className="bg-white dark:bg-black">
         <Introduction/>
         <Education/>
         <Projects/>

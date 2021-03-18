@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ProjectCard } from './ProjectCard'
 
 interface IProps {
   className?: string
@@ -20,22 +21,9 @@ function ProjectsLayout(props: IProps) {
               <b>Thesis project</b>
           </Link>
         </p>
-        <p>
-          <Link href="http://go.vaisala.com/keravaradar/" passHref>
-              <b>Work project at Vaisala</b>
-          </Link>
-          <Image
-            src="/vaisala-project.png"
-            alt="Vaisala project"
-            width={460}
-            height={350}
-          />
-        </p>
-        <p>
-          <Link href="https://d386g19k2b21z4.cloudfront.net/" passHref>
-              <b>Fansite for submitting speedruns for a videogame</b>
-          </Link>
-        </p>
+        <ProjectCard title="Thesis project" image="/proposed-CNN-system.jpg" text="Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster." pretitle="keras, praat, python" link="https://github.com/koodilauri/speaker-verification"/>
+        <ProjectCard title="Vaisala project" image="/vaisala-project.png" text="Summer project for vaisala" pretitle="docker, node.js, react, typescript" link="http://go.vaisala.com/keravaradar/"/>
+        <ProjectCard title="Monster Hunter Generations fansite" image="/hunters-log.png" text="Fansite for submitting speedruns for a videogame" pretitle="node.js, react, javascript" link="https://d386g19k2b21z4.cloudfront.net/"/>
       </div>
       </ProjectWrapper>
     </ProjectContainer>
