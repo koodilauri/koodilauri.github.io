@@ -33,7 +33,6 @@ const NavWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 `
 const Nav = styled.nav`
   display: flex;
