@@ -17,7 +17,6 @@ export const Layout = () => {
       <h1>
         Lauri Koivisto
       </h1>
-
       <p>
         <div className="code">Portfolio 2021</div>
       </p>

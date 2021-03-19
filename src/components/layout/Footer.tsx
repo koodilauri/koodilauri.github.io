@@ -9,17 +9,13 @@ interface IProps {
 function FooterLayout(props: IProps) {
   const { className } = props
   return (
-    <FooterContainer className={className}>
-      <NavWrapper>
-        <Nav>
-          <Link href="/" passHref>
-            <StyledLink>
-              <b className="btn-blue">Powered by{' '}</b>
-            </StyledLink>
-          </Link>
-        </Nav>
-      </NavWrapper>
-    </FooterContainer>
+    <div className="w-full text-center border-t border-grey p-4 pin-b">
+      <Link href="/" passHref>
+        <StyledLink>
+          <b className="btn-blue">Back to top</b>
+        </StyledLink>
+      </Link>
+    </div>
   )
 }
 
@@ -41,4 +37,4 @@ const Nav = styled.nav`
 `
 const StyledLink = styled.a``
 
-export const Footer = styled(FooterLayout)``
+export const Footer = FooterLayout
