@@ -15,13 +15,13 @@ function EducationCardLayout(props: IProps) {
   return (
     <div className={className}>
       <div>
-      <Image
-            src={image}
-            alt="School picture"
-            width={360}
-            height={130}
-            className="rounded"
-          />
+        <Image
+          src={image}
+          alt="School picture"
+          width={360}
+          height={130}
+          className="rounded"
+        />
         <div className="mt-2">
           <div>
             <div className="text-xs text-gray-600 uppercase font-bold">{ degree }</div>

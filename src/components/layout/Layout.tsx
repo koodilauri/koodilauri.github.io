@@ -5,25 +5,32 @@ import Head from 'next/head'
 import { Footer } from './Footer'
 import { Portfolio } from '../Portfolio'
 
-export const Layout = () => {
+interface IProps {
+  children: React.ReactNode
+}
+
+export const Layout = (props: IProps) => {
   return (
-    <div>
-    <Head>
-      <title>Portfolio</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <main>
-      <h1>
-        Lauri Koivisto
-      </h1>
-      <p>
-        <div className="code">Portfolio 2021</div>
-      </p>
-      <Portfolio/>
-    </main>
-
-    <Footer/>
-  </div>
+    <Wrapper>
+      <Head>
+        <title>Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Container>{ props.children }</Container>
+      <Footer/>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div`
+  background-image: #666;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+`
+const Container = styled.main`
+  margin: 2rem 0.5rem 2rem 0.5rem;
+`
