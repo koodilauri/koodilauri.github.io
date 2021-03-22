@@ -4,21 +4,19 @@ interface IProps {
   className?: string
 }
 
-function IntroLayout(props: IProps) {
+function IntroEl(props: IProps) {
   const { className } = props
   return (
-    <IntroContainer className={className}>
-      <IntroWrapper>
-        <div>
-          Hello, I’m Lauri Koivisto; a master’s student of CCIS from Aalto University with a bachelor’s degree in Automation and Systems Technology.
-        </div>
-      </IntroWrapper>
-    </IntroContainer>
+    <Container className={className}>
+      <div>
+        Hello, I’m Lauri Koivisto; a master’s student of CCIS from Aalto
+        University with a bachelor’s degree in Automation and Systems
+        Technology.
+      </div>
+    </Container>
   )
 }
 
-const IntroContainer = styled.div`
-`
-const IntroWrapper = styled.div`
-`
-export const Introduction = styled(IntroLayout)``
+const Container = styled.div``
+
+export const Introduction = styled(IntroEl)``

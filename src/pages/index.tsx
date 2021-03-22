@@ -15,10 +15,10 @@ export default function Home() {
         <em>Hi!</em>
       </Header>
       <Container>
-        <Introduction/>
-        <Education/>
-        <Projects/>
-        <Skills/>
+        <Introduction />
+        <Education />
+        <Projects />
+        <Skills />
       </Container>
     </Layout>
   )

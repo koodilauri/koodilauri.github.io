@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "postbuild": "cp -a out/. ../build"
+    "postbuild": "cp -a out/. ../build",
+    "format": "prettier --write \"./src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\""
   },
   "dependencies": {
     "dependency": "^0.0.1",
@@ -22,6 +23,7 @@
     "@types/styled-components": "^5.1.9",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.8",
+    "prettier": "^2.2.1",
     "tailwindcss": "^2.0.3",
     "typescript": "^4.2.3"
   }

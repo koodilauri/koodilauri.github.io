@@ -16,8 +16,8 @@ export const Layout = (props: IProps) => {
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container>{ props.children }</Container>
-      <Footer/>
+      <Container>{props.children}</Container>
+      <Footer />
     </Wrapper>
   )
 }
