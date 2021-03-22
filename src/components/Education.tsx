@@ -46,9 +46,10 @@ const Container = styled.div`
 const CardWrapper = styled.div`
   align-items: center;
   align-content: space-around;
+  background: #e2e2e2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 `
 export const Education = EducationEl

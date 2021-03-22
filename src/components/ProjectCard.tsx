@@ -38,6 +38,8 @@ function ProjectCardEl(props: IProps) {
     </Container>
   )
 }
-const Container = styled.div``
+const Container = styled.div`
+  background: #e2e2e2;
+`
 
 export const ProjectCard = styled(ProjectCardEl)``
