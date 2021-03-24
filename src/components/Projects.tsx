@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import Image from 'next/image'
 import { ProjectCard } from './ProjectCard'
 
 interface IProps {
@@ -10,7 +9,7 @@ interface IProps {
 function ProjectsEl(props: IProps) {
   const { className } = props
   return (
-    <Container className={className}>
+    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max m-auto p-4">
       <h2>Projects</h2>
       <p>
         <Link

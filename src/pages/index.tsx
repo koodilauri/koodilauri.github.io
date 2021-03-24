@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import styles from '../styles/Home.module.css'
 
 import { Layout } from '../components/layout/Layout'
 import { Introduction } from '../components/Introduction'
@@ -38,8 +37,8 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-width: 700px;
-  margin: 0 auto;
+  // max-width: 700px;
+  // margin: 0 auto;
   & > * + * {
     margin-top: 3rem;
   }

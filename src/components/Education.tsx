@@ -8,9 +8,9 @@ interface IProps {
 function EducationEl(props: IProps) {
   const { className } = props
   return (
-    <Container className={className}>
+    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max m-auto p-4">
       <h2>Education</h2>
-      <CardWrapper>
+      <CardWrapper className="w-full h-max p-4">
         <EducationCard
           degree="Master of Science in Technology"
           image="/aalto-logo.jpg"
@@ -25,7 +25,7 @@ function EducationEl(props: IProps) {
         />
         <EducationCard
           degree="Graduate student"
-          image="/hyk-logo.png"
+          image="/hyvinkaa-logo.jpg"
           text="I wrote extended mathematics, physics, english, social studies and finnish."
           date="August 2010 - June 2013"
         />
@@ -36,6 +36,7 @@ function EducationEl(props: IProps) {
 const Container = styled.div`
   & > h2 {
     font-size: 14px;
+    color: #999;
     font-weight: 500;
     margin: 0 0 20px 0;
     letter-spacing: 2px;
@@ -44,12 +45,12 @@ const Container = styled.div`
   }
 `
 const CardWrapper = styled.div`
-  align-items: center;
-  align-content: space-around;
+  // align-items: center;
+  // align-content: space-around;
   background: #e2e2e2;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 `
 export const Education = EducationEl

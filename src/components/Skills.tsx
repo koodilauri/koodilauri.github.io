@@ -7,7 +7,7 @@ interface IProps {
 function SkillsEl(props: IProps) {
   const { className } = props
   return (
-    <Container className={className}>
+    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max m-auto p-4">
       <div>
         <h2>Skills</h2>
         <p>Python, Typescript, SQL, Fullstack, git, github, docker</p>
