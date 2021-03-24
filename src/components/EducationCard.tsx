@@ -13,7 +13,7 @@ interface IProps {
 function EducationCardEl(props: IProps) {
   const { className, image, date, text, degree } = props
   return (
-    <Container className="w-full mb-8 flex md:flex-row">
+    <Container className="w-full mb-8 flex md:flex-row rounded">
       <img
         src={image}
         alt="School picture"
@@ -35,5 +35,6 @@ function EducationCardEl(props: IProps) {
 }
 const Container = styled.div`
   // width: 300px;
+  background: #111;
 `
 export const EducationCard = EducationCardEl

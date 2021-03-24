@@ -9,7 +9,7 @@ function EducationEl(props: IProps) {
   const { className } = props
   return (
     <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max m-auto p-4">
-      <h2>Education</h2>
+      <h2 className="text-center">Education</h2>
       <CardWrapper className="w-full h-max p-4">
         <EducationCard
           degree="Master of Science in Technology"
@@ -35,19 +35,18 @@ function EducationEl(props: IProps) {
 }
 const Container = styled.div`
   & > h2 {
-    font-size: 14px;
+    font-size: 2rem;
     color: #999;
     font-weight: 500;
     margin: 0 0 20px 0;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
   }
 `
 const CardWrapper = styled.div`
   // align-items: center;
   // align-content: space-around;
-  background: #e2e2e2;
   // display: flex;
   // flex-direction: row;
   // flex-wrap: wrap;
