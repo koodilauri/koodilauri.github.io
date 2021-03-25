@@ -47,6 +47,7 @@ const Container = styled.div`
 const CardWrapper = styled.div`
   // align-items: center;
   // align-content: space-around;
+  background: #101;
   // display: flex;
   // flex-direction: row;
   // flex-wrap: wrap;
