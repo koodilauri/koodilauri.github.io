@@ -25,7 +25,6 @@ export const Layout = (props: IProps) => {
 const Wrapper = styled.div`
   background-color: #000;
   background-size: cover;
-  color: #666;
   display: flex;
   flex-direction: column;
   min-height: 100%;

@@ -8,51 +8,76 @@ interface IProps {
 
 function ProjectsEl(props: IProps) {
   const projects = {
-    thesis: 
-    {
-      title: "Thesis project",
-      image: "/proposed-CNN-system.jpg",
-      text: "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
+    thesis: {
+      title: 'Thesis project',
+      image: '/proposed-CNN-system.jpg',
+      text:
+        "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
       tech: [
-        'keras', 'praat', 'python'
+        {
+          name: 'keras',
+          icon: '/keras.png',
+        },
+        {
+          name: 'praat',
+          icon: '/praat.png',
+        },
+        {
+          name: 'python',
+          icon: '/python.jpg',
+        },
       ],
-      link: "https://github.com/koodilauri/speaker-verification",
+      link: 'https://github.com/koodilauri/speaker-verification',
     },
-    vaisala: 
-    {
-      title: "Vaisala project",
-      image: "/vaisala-project.png",
-      text: "Summer project for vaisala",
+    vaisala: {
+      title: 'Vaisala project',
+      image: '/vaisala-project.png',
+      text: 'Summer project for vaisala',
       tech: [
-        'docker', 'node.js', 'typescript'
+        {
+          name: 'docker',
+          icon: '/praat.png',
+        },
+        {
+          name: 'node.js',
+          icon: '/praat.png',
+        },
+        {
+          name: 'typescript',
+          icon: '/praat.png',
+        },
       ],
-      link: "http://go.vaisala.com/keravaradar/",
+      link: 'http://go.vaisala.com/keravaradar/',
     },
-    monsterhunter: 
-    {
-      title: "Monster Hunter Generations fansite",
-      image: "/hunters-log.png",
-      text: "Fansite for submitting speedruns for a videogame",
+    monsterhunter: {
+      title: 'Monster Hunter Generations fansite',
+      image: '/hunters-log.png',
+      text: 'Fansite for submitting speedruns for a videogame',
       tech: [
-        'javascript', 'node.js', 'react'
+        {
+          name: 'javascript',
+          icon: '/praat.png',
+        },
+        {
+          name: 'node.js',
+          icon: '/praat.png',
+        },
+        {
+          name: 'react',
+          icon: '/praat.png',
+        },
       ],
-      link: "https://d386g19k2b21z4.cloudfront.net/",
-      }
+      link: 'https://d386g19k2b21z4.cloudfront.net/',
+    },
   }
   const { className } = props
   return (
     <Container className="w-full mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
-      <h2>Projects</h2>
+      <h2 className="dark:text-gray-700">Projects</h2>
       <CardWrapper className="w-full mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
-        <ProjectCard
-          project={projects.thesis}
-        />
-        <ProjectCard
-          project={projects.vaisala}
-        />
-        <ProjectCard
-          project={projects.monsterhunter}
-        />
+        <ProjectCard project={projects.thesis} />
+        <ProjectCard project={projects.vaisala} />
+        <ProjectCard project={projects.monsterhunter} />
       </CardWrapper>
     </Container>
   )
@@ -61,14 +86,12 @@ function ProjectsEl(props: IProps) {
 const Container = styled.div`
   & > h2 {
     font-size: 2rem;
-    color: #999;
     font-weight: 500;
     margin: 0 0 20px 0;
     letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
   }
 `
 const CardWrapper = styled.div`
-background: #101;
+  background: #101;
 `
 export const Projects = styled(ProjectsEl)``

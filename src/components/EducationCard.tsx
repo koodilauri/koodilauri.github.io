@@ -23,11 +23,13 @@ function EducationCardEl(props: IProps) {
       />
       <div className="mt-2 ml-5">
         <div>
-          <div className="text-xs text-gray-600 uppercase font-bold">
+          <div className="text-xs dark:text-gray-600 uppercase font-bold">
             {degree}
           </div>
-          <div className="font-bold text-gray-700 leading-snug">{date}</div>
-          <div className="mt-2 text-sm text-gray-600">{text}</div>
+          <div className="font-bold dark:text-gray-500 leading-snug">
+            {date}
+          </div>
+          <div className="mt-2 text-sm dark:text-gray-600">{text}</div>
         </div>
       </div>
     </Container>
@@ -35,6 +37,5 @@ function EducationCardEl(props: IProps) {
 }
 const Container = styled.div`
   // width: 300px;
-  background: #111;
 `
 export const EducationCard = EducationCardEl
