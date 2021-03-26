@@ -23,15 +23,15 @@ function EducationCardEl(props: IProps) {
         height={200}
         className="rounded"
       />
-      <div className="mt-2 ml-5">
+      <div className="mt-2 ml-5 mr-5">
         <div>
-          <div className="text-xs uppercase font-bold">
+          <div className="text-lg uppercase font-bold">
             {education.degree}
           </div>
           <div className="font-bold leading-snug">
             {education.date}
           </div>
-          <div className="mt-2 text-sm">{education.text}</div>
+          <div className="mt-2 text-xl">{education.text}</div>
         </div>
       </div>
     </Container>

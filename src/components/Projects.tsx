@@ -85,7 +85,7 @@ function ProjectsEl(props: IProps) {
 
 const Container = styled.div`
   & > h2 {
-    font-size: 2rem;
+    font-size: 3.75rem;
     font-weight: 500;
     margin: 0 0 20px 0;
     letter-spacing: 2px;

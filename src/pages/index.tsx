@@ -10,8 +10,8 @@ import { Skills } from '../components/Skills'
 export default function Home() {
   return (
     <Layout>
-      <Header>
-        <h1>Lauri Koivisto</h1>
+      <Header className="h-screen">
+        <h1 className="mt-img-mobile text-5xl md:mt-40 md:text-8xl">Lauri Koivisto</h1>
         <div className="mt-8 flex flex-col md:flex-row justify-evenly"> 
           <a href="https://github.com/koodilauri" >
             <img
@@ -49,7 +49,6 @@ const Header = styled.header`
   flex-direction: column;
   margin-bottom: 3rem;
   & > h1 {
-    font-size: 4rem;
     font-weight: 600;
   }
 `

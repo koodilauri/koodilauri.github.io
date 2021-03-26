@@ -28,8 +28,11 @@ function EducationEl(props: IProps) {
     }
   }
   return (
-    <Container className="w-full h-auto bg-purple-900 bg-opacity-20 items-center ">
-      <h2 className="text-center ">Education</h2>
+    <Container className="w-full h-auto bg-primary bg-opacity-20 items-center ">
+      <div>
+      <div className="w-72 h-8 mx-auto bg-purple-900 relative top-16 z-0"></div>
+      <h2 className="text-center mb-4 text-6xl relative z-1">Education</h2>
+      </div>
       <CardWrapper className="w-1/2  m-auto mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
         <EducationCard education={education.master}/>
         <EducationCard education={education.bachelor}/>
@@ -40,7 +43,7 @@ function EducationEl(props: IProps) {
 }
 const Container = styled.div`
   & > h2 {
-    font-size: 2rem;
+    font-size: 3.75rem;
     font-weight: 500;
     margin: 0 0 20px 0;
     letter-spacing: 2px;
