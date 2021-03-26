@@ -35,6 +35,7 @@ const Nav = styled.nav`
   padding: 40px;
   position: relative;
 `
-const StyledLink = styled.a``
+const StyledLink = styled.a`
+`
 
 export const Footer = FooterLayout

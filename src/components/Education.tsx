@@ -7,28 +7,33 @@ interface IProps {
 
 function EducationEl(props: IProps) {
   const { className } = props
+  const education = {
+    master: {
+      degree: "Master of Science in Technology",
+      image: "/logo-72899-1.png",
+      text: "I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing.",
+      date: "October 2017 - Present"
+    },
+    bachelor: {
+      degree: "Bachelor of Science (Technology)",
+      image: "/logo-35434-1.png",
+      text: "I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics.",
+      date: "October 2014 - 2017"
+    },
+    graduate: {
+      degree: "Graduate student",
+      image: "/hyvinkaa-logo.jpg",
+      text: "I wrote extended mathematics, physics, english, social studies and finnish.",
+      date: "August 2010 - June 2013"
+    }
+  }
   return (
-    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max m-auto p-4">
-      <h2 className="text-center dark:text-gray-700">Education</h2>
-      <CardWrapper className="w-full h-max p-4 dark:bg-gray-900">
-        <EducationCard
-          degree="Master of Science in Technology"
-          image="/aalto-logo.jpg"
-          text="I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing."
-          date="October 2017 - Present"
-        />
-        <EducationCard
-          degree="Bachelor of Science (Technology)"
-          image="/aalto-logo.jpg"
-          text="I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics."
-          date="October 2014 - 2017"
-        />
-        <EducationCard
-          degree="Graduate student"
-          image="/hyvinkaa-logo.jpg"
-          text="I wrote extended mathematics, physics, english, social studies and finnish."
-          date="August 2010 - June 2013"
-        />
+    <Container className="w-full h-auto bg-purple-900 bg-opacity-20 items-center ">
+      <h2 className="text-center ">Education</h2>
+      <CardWrapper className="w-1/2  m-auto mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
+        <EducationCard education={education.master}/>
+        <EducationCard education={education.bachelor}/>
+        <EducationCard education={education.graduate}/>
       </CardWrapper>
     </Container>
   )
@@ -41,6 +46,7 @@ const Container = styled.div`
     letter-spacing: 2px;
     // text-transform: uppercase;
   }
+  min-height: 100vh;
 `
 const CardWrapper = styled.div`
   // align-items: center;

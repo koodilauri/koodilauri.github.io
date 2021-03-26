@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import { Layout } from '../components/layout/Layout'
 import { Introduction } from '../components/Introduction'
@@ -11,7 +12,26 @@ export default function Home() {
     <Layout>
       <Header>
         <h1>Lauri Koivisto</h1>
-        <em>Hi!</em>
+        <div className="mt-8 flex flex-col md:flex-row justify-evenly"> 
+          <a href="https://github.com/koodilauri" >
+            <img
+            src="/GitHub-Mark-Light-64px.png"
+            alt="github"
+            width="64" 
+            height="64"
+            className="m-5"
+            />
+          </a>  
+          <a href="mailto:lakoivisto@gmail.com" >
+            <img
+            src="/email.png"
+            alt="mailto"
+            width="64" 
+            height="64"
+            className="m-5"
+            />
+          </a>  
+        </div>
       </Header>
       <Container>
         <Introduction />

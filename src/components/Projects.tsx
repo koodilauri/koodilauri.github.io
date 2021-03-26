@@ -72,8 +72,8 @@ function ProjectsEl(props: IProps) {
   }
   const { className } = props
   return (
-    <Container className="w-full mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
-      <h2 className="dark:text-gray-700">Projects</h2>
+    <Container className="w-full h-auto bg-purple-900 bg-opacity-10">
+      <h2 className="text-center">Projects</h2>
       <CardWrapper className="w-full mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
         <ProjectCard project={projects.thesis} />
         <ProjectCard project={projects.vaisala} />
@@ -92,6 +92,5 @@ const Container = styled.div`
   }
 `
 const CardWrapper = styled.div`
-  background: #101;
 `
 export const Projects = styled(ProjectsEl)``
