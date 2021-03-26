@@ -35,26 +35,21 @@ function ProjectCardEl(props: IProps) {
               {project.title}
             </Link>
           </div>
-          <div className="mt-2 text-sm ">{project.text}</div>
-          <div className="text-s font-thin flex flex-col md:flex-row flex-wrap">
+          <div className="mt-2 mx-2 text-base">{project.text}</div>
+          <div className="text-s font-thin flex flex-row flex-wrap justify-center">
             {project.tech.map((p, i) => (
-              <TechCard
-                className="m-2 px-2 py-1 text-xl rounded shadow bg-primary flex flex:row"
-                key={i}
-              >
+              <TechCard className="m-2 px-2 py-1 text-xl rounded shadow bg-primary flex flex-row" key={i}>
                 <div className="mt-1 mr-0.5 w-5 h-5">
-                <Image
-                  src={p.icon}
-                  alt="Project picture"
-                  width={20}
-                  height={20} 
-                  layout="responsive" // required
-                  objectFit="contain" // change to suit your needs
-                />
+                  <Image
+                    src={p.icon}
+                    alt="Project picture"
+                    width={20}
+                    height={20}
+                    layout="responsive" // required
+                    objectFit="contain" // change to suit your needs
+                  />
                 </div>
-                <div className="mb-0">
-                  {p.name}
-                </div>
+                <div className="mb-0">{p.name}</div>
               </TechCard>
             ))}
           </div>
@@ -63,15 +58,13 @@ function ProjectCardEl(props: IProps) {
     </Container>
   )
 }
-const Container = styled.div`
-`
+const Container = styled.div``
 const ProjectImage = styled.div`
   height: 10rem;
 `
 const TechCard = styled.div``
 const ProjectText = styled.div`
   width: 20rem;
-  height: 12rem;
 `
 
 export const ProjectCard = styled(ProjectCardEl)``

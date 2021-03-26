@@ -7,6 +7,7 @@ module.exports = {
       'primary': '#4c1d95',
       'secondary': '#ffed4a',
       'danger': '#e3342f',
+      'shade': '#08030f'
     }),
   },
   variants: {

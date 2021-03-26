@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 interface IProps {
   className?: string
-  education ?: {
+  education?: {
     image?: string
     date?: string
     text?: string
@@ -15,23 +15,19 @@ interface IProps {
 function EducationCardEl(props: IProps) {
   const { className, education } = props
   return (
-    <Container className="w-full mb-8 flex md:flex-row rounded bg-purple-900 shadow">
+    <Container className="w-full mb-8 flex md:flex-row rounded bg-gray-900 bg-opacity-60 shadow">
       <img
         src={education.image}
         alt="School picture"
         width={200}
         height={200}
-        className="rounded"
+        className="rounded bg-primary"
       />
       <div className="mt-2 ml-5 mr-5">
         <div>
-          <div className="text-lg uppercase font-bold">
-            {education.degree}
-          </div>
-          <div className="font-bold leading-snug">
-            {education.date}
-          </div>
-          <div className="mt-2 text-xl">{education.text}</div>
+          <div className="text-3xl uppercase font-bold">{education.degree}</div>
+          <div className="font-bold leading-snug text-base">{education.date}</div>
+          <div className="mt-2 text-lg">{education.text}</div>
         </div>
       </div>
     </Container>
