@@ -15,16 +15,16 @@ function ProjectsEl(props: IProps) {
         "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
       tech: [
         {
-          name: 'keras',
+          name: 'Keras',
           icon: '/keras.png',
         },
         {
-          name: 'praat',
+          name: 'Praat',
           icon: '/praat.png',
         },
         {
-          name: 'python',
-          icon: '/python.jpg',
+          name: 'Python',
+          icon: '/python.png',
         },
       ],
       link: 'https://github.com/koodilauri/speaker-verification',
@@ -35,16 +35,16 @@ function ProjectsEl(props: IProps) {
       text: 'Summer project for vaisala',
       tech: [
         {
-          name: 'docker',
-          icon: '/praat.png',
+          name: 'Docker',
+          icon: '/docker-logo.png',
         },
         {
-          name: 'node.js',
-          icon: '/praat.png',
+          name: 'Node.js',
+          icon: '/node.png',
         },
         {
-          name: 'typescript',
-          icon: '/praat.png',
+          name: 'Typescript',
+          icon: '/typescript.svg',
         },
       ],
       link: 'http://go.vaisala.com/keravaradar/',
@@ -55,16 +55,16 @@ function ProjectsEl(props: IProps) {
       text: 'Fansite for submitting speedruns for a videogame',
       tech: [
         {
-          name: 'javascript',
-          icon: '/praat.png',
+          name: 'Javascript',
+          icon: '/javascript.svg',
         },
         {
-          name: 'node.js',
-          icon: '/praat.png',
+          name: 'Node.js',
+          icon: '/node.png',
         },
         {
-          name: 'react',
-          icon: '/praat.png',
+          name: 'React',
+          icon: '/react.svg',
         },
       ],
       link: 'https://d386g19k2b21z4.cloudfront.net/',

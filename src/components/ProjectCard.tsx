@@ -36,20 +36,25 @@ function ProjectCardEl(props: IProps) {
             </Link>
           </div>
           <div className="mt-2 text-sm ">{project.text}</div>
-          <div className="text-s font-bold flex flex-col md:flex-row flex-wrap">
+          <div className="text-s font-thin flex flex-col md:flex-row flex-wrap">
             {project.tech.map((p, i) => (
               <TechCard
-                className="w-max m-2 px-2 py-1 text-xl rounded shadow bg-primary"
+                className="m-2 px-2 py-1 text-xl rounded shadow bg-primary flex flex:row"
                 key={i}
               >
+                <div className="mt-1 mr-0.5 w-5 h-5">
                 <Image
                   src={p.icon}
                   alt="Project picture"
                   width={20}
-                  height={20}
-                  className=""
+                  height={20} 
+                  layout="responsive" // required
+                  objectFit="contain" // change to suit your needs
                 />
-                {p.name}
+                </div>
+                <div className="mb-0">
+                  {p.name}
+                </div>
               </TechCard>
             ))}
           </div>
