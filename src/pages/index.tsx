@@ -34,9 +34,9 @@ export default function Home() {
             />
           </a>
         </div>
+        <Introduction />
       </Header>
       <Container>
-        <Introduction />
         <Education />
         <Projects />
         <Skills />
@@ -61,6 +61,6 @@ const Container = styled.div`
   // max-width: 700px;
   // margin: 0 auto;
   & > * + * {
-    margin-top: 3rem;
+    padding-top: 3rem;
   }
 `

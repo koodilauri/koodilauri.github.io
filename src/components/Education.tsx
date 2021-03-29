@@ -32,8 +32,8 @@ function EducationEl(props: IProps) {
   }
   return (
     <Container className="w-full h-auto items-center bg-gradient-to-b from-black">
-      <div>
-        <div className="w-72 h-8 mx-auto bg-purple-900 relative top-16 z-0"></div>
+      <div className="mb-20">
+        <div className="w-72 h-8 mx-auto bg-green-900 relative top-16 z-0"></div>
         <h2 className="text-center mb-4 text-6xl relative z-1">Education</h2>
       </div>
       <CardWrapper className="w-1/2  m-auto mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
@@ -53,7 +53,7 @@ const Container = styled.div`
     // text-transform: uppercase;
   }
   min-height: 100vh;
-  background-color: rgba(8,3,15, 1)
+  background-color: rgba(8, 3, 15, 1);
 `
 const CardWrapper = styled.div`
   // align-items: center;

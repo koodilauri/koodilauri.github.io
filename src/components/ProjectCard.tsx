@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
+import { TechCard } from './TechCard'
 
 interface IProps {
   className?: string
@@ -16,7 +17,7 @@ interface IProps {
 function ProjectCardEl(props: IProps) {
   const { className, project } = props
   return (
-    <Container className="w-img-mobile md:w-img-desktop m-4 md:m-16 shadow bg-gray-900 bg-opacity-50">
+    <Container className="w-img-mobile md:w-img-desktop m-16 shadow bg-gray-900 bg-opacity-50">
       <div className="h-max ">
         <ProjectImage className="h-50 w-19 relative ">
           <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105"></div>
@@ -29,42 +30,31 @@ function ProjectCardEl(props: IProps) {
             className=""
           />
         </ProjectImage>
-        <ProjectText className="">
-          <div className="font-bold text-lg text-center pt-3 pb-3 bg-purple-700">
+          <div className="font-bold text-lg text-center py-3">
             <Link href={project.link} passHref>
               {project.title}
             </Link>
           </div>
+        <ProjectDetails className="text-center bg-gray-900 py-3" >
+          <summary>Details</summary>
           <div className="mt-2 mx-2 text-base">{project.text}</div>
+        </ProjectDetails>
           <div className="text-s font-thin flex flex-row flex-wrap justify-center">
-            {project.tech.map((p, i) => (
-              <TechCard className="m-2 px-2 py-1 text-xl rounded shadow bg-primary flex flex-row" key={i}>
-                <div className="mt-1 mr-0.5 w-5 h-5">
-                  <Image
-                    src={p.icon}
-                    alt="Project picture"
-                    width={20}
-                    height={20}
-                    layout="responsive" // required
-                    objectFit="contain" // change to suit your needs
-                  />
-                </div>
-                <div className="mb-0">{p.name}</div>
-              </TechCard>
-            ))}
+            {project.tech.map(code => (
+              <TechCard key={code.id} code={code} />
+              ))}
           </div>
-        </ProjectText>
       </div>
     </Container>
   )
 }
-const Container = styled.div``
-const ProjectImage = styled.div`
-  height: 10rem;
+const Container = styled.div`
+width: 25rem;
 `
-const TechCard = styled.div``
-const ProjectText = styled.div`
-  width: 20rem;
+const ProjectImage = styled.div`
+  height: 15rem;
+`
+const ProjectDetails = styled.details`
 `
 
 export const ProjectCard = styled(ProjectCardEl)``

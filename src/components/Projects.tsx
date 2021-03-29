@@ -15,14 +15,17 @@ function ProjectsEl(props: IProps) {
         "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
       tech: [
         {
+          id: 1,
           name: 'Keras',
           icon: '/keras.png',
         },
         {
+          id: 2,
           name: 'Praat',
           icon: '/praat.png',
         },
         {
+          id: 3,
           name: 'Python',
           icon: '/python.png',
         },
@@ -35,14 +38,17 @@ function ProjectsEl(props: IProps) {
       text: 'Summer project for vaisala',
       tech: [
         {
+          id: 1,
           name: 'Docker',
           icon: '/docker-logo.png',
         },
         {
+          id: 2,
           name: 'Node.js',
           icon: '/node.png',
         },
         {
+          id: 3,
           name: 'Typescript',
           icon: '/typescript.svg',
         },
@@ -55,14 +61,17 @@ function ProjectsEl(props: IProps) {
       text: 'Fansite for submitting speedruns for a videogame',
       tech: [
         {
+          id: 1,
           name: 'Javascript',
           icon: '/javascript.svg',
         },
         {
+          id: 2,
           name: 'Node.js',
           icon: '/node.png',
         },
         {
+          id: 3,
           name: 'React',
           icon: '/react.svg',
         },
@@ -72,7 +81,7 @@ function ProjectsEl(props: IProps) {
   }
   const { className } = props
   return (
-    <Container className="w-full h-auto bg-purple-900 bg-opacity-10">
+    <Container className="w-full h-auto min-h-screen bg-purple-900 bg-opacity-10">
       <div>
         <div className="w-60 h-8 mx-auto bg-purple-900 relative top-16 z-0"></div>
         <h2 className="text-center mb-4 text-6xl relative z-1">Projects</h2>
