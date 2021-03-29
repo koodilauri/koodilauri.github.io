@@ -12,7 +12,7 @@ function FooterLayout(props: IProps) {
     <div className="w-full text-center border-t border-grey p-4 pin-b">
       <Link href="/" passHref>
         <StyledLink>
-          <b className="btn-blue">Back to top</b>
+          <b className="btn-purple">Back to top</b>
         </StyledLink>
       </Link>
     </div>

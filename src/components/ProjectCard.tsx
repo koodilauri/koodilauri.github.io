@@ -30,31 +30,30 @@ function ProjectCardEl(props: IProps) {
             className=""
           />
         </ProjectImage>
-          <div className="font-bold text-lg text-center py-3">
-            <Link href={project.link} passHref>
-              {project.title}
-            </Link>
-          </div>
-        <ProjectDetails className="text-center bg-gray-900 py-3" >
+        <h3 className="font-bold text-lg text-center py-3">
+          <Link href={project.link} passHref>
+            {project.title}
+          </Link>
+        </h3>
+        <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3">
           <summary>Details</summary>
           <div className="mt-2 mx-2 text-base">{project.text}</div>
         </ProjectDetails>
-          <div className="text-s font-thin flex flex-row flex-wrap justify-center">
-            {project.tech.map(code => (
-              <TechCard key={code.id} code={code} />
-              ))}
-          </div>
+        <div className="text-s font-thin flex flex-row flex-wrap justify-center">
+          {project.tech.map(code => (
+            <TechCard key={code.id} code={code} />
+          ))}
+        </div>
       </div>
     </Container>
   )
 }
 const Container = styled.div`
-width: 25rem;
+  width: 25rem;
 `
 const ProjectImage = styled.div`
   height: 15rem;
 `
-const ProjectDetails = styled.details`
-`
+const ProjectDetails = styled.details``
 
 export const ProjectCard = styled(ProjectCardEl)``

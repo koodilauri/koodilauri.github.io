@@ -32,5 +32,5 @@ const Wrapper = styled.div`
   width: 100%;
 `
 const Container = styled.main`
-  margin: 2rem 0.5rem 2rem 0.5rem;
+  margin: 2rem 0rem;
 `

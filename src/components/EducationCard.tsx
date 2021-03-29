@@ -19,17 +19,17 @@ function EducationCardEl(props: IProps) {
       <img
         src={education.image}
         alt="School picture"
-        width={200}
-        height={200}
-        className="rounded bg-green-900"
+        width={198}
+        height={198}
+        className="rounded bg-green-900 max-h-44 h-0 w-0 lg:h-60 lg:w-44 self-center"
       />
-      <div className="mt-2 ml-5 mr-5">
+      <div className="mt-2 mx-5">
         <div>
-          <div className="text-3xl uppercase font-bold">{education.degree}</div>
+          <h3 className="text-3xl uppercase font-bold">{education.degree}</h3>
           <div className="font-bold leading-snug text-base">
             {education.date}
           </div>
-          <div className="mt-2 text-lg">{education.text}</div>
+          <div className="my-2 text-lg">{education.text}</div>
         </div>
       </div>
     </Container>

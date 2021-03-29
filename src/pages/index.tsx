@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <Layout>
       <Header className="h-screen">
-        <h1 className="mt-img-mobile text-5xl md:mt-40 md:text-8xl">
+        <h1 className="mt-img-mobile text-5xl md:mt-24 md:text-8xl">
           Lauri Koivisto
         </h1>
-        <div className="mt-8 flex flex-col md:flex-row justify-evenly">
+        <div className="mt-8 flex flex-row justify-evenly">
           <a href="https://github.com/koodilauri">
             <img
               src="/GitHub-Mark-Light-64px.png"
@@ -61,6 +61,6 @@ const Container = styled.div`
   // max-width: 700px;
   // margin: 0 auto;
   & > * + * {
-    padding-top: 3rem;
+    padding-top: 0rem;
   }
 `
