@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 
 import { Layout } from '../components/layout/Layout'
 import { Introduction } from '../components/Introduction'

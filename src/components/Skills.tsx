@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Image from 'next/image'
 
 interface IProps {
   className?: string
@@ -10,7 +9,6 @@ function SkillsEl(props: IProps) {
   return (
     <Container className="w-full m-auto p-4 bg-gradient-to-t from-black ">
       <div>
-        {/* <div className="w-44 h-8 mx-auto bg-red-900 relative top-20 z-0"></div> */}
         <h2 className="text-center mb-8 text-6xl relative z-1">Skills</h2>
       </div>
       <div className="text-base text-center items-center flex flex-col">

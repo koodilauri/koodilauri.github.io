@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import Image from 'next/image'
 import { TechCard } from './TechCard'
 
 interface IProps {
@@ -19,17 +18,17 @@ function ProjectCardEl(props: IProps) {
   return (
     <Container className="w-img-mobile md:w-img-desktop m-16 shadow bg-gray-900 bg-opacity-50">
       <div className="h-max ">
-        <ProjectImage className="group h-50 w-19 relative">
-          <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105 "></div>
-          <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-300 transform -rotate-3 scale-105 "></div>
-          <Image
-            src={project.image}
-            alt="Project picture"
-            layout="fill" // required
-            objectFit="cover" // change to suit your needs
-            className=""
-          />
-        </ProjectImage>
+        <ProjectImageWrap className="group h-50 w-19 relative">
+          <div className="z-0 w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105 "></div>
+          <div className="z-0 w-full h-full absolute top-0 left-0 rounded bg-purple-300 transform -rotate-3 scale-105 "></div>
+          <div className="z-10 w-full h-full absolute top-0 left-0 rounded">
+            <ProjectImage
+              src={project.image}
+              alt="Project picture"
+              className=""
+            />
+          </div>
+        </ProjectImageWrap>
         <div className="group h-16 mt-1 hover:h-auto">
           <h3 className=" font-bold text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
             <Link href={project.link} passHref>
@@ -68,8 +67,13 @@ function ProjectCardEl(props: IProps) {
 const Container = styled.div`
   width: 25rem;
 `
-const ProjectImage = styled.div`
+const ProjectImageWrap = styled.div`
   height: 15rem;
+`
+const ProjectImage = styled.img`
+  width: 500px;
+  height: 300px;
+  object-fit: fill;
 `
 const ProjectDetails = styled.div``
 
