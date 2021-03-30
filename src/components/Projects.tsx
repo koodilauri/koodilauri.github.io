@@ -80,7 +80,7 @@ function ProjectsEl(props: IProps) {
     },
     portfolio: {
       title: 'Personal portfolio',
-      image: '/hunters-log.png',
+      image: '/portfolio.png',
       text:
         'I developed and designed a website using Next.js and tailwindCSS to showcase my portfolio in a more visually appealing format.',
       tech: [
@@ -92,7 +92,7 @@ function ProjectsEl(props: IProps) {
         {
           id: 2,
           name: 'Next.js',
-          icon: '/next.png',
+          icon: '/next-js.svg',
         },
         {
           id: 3,
@@ -100,7 +100,7 @@ function ProjectsEl(props: IProps) {
           icon: '/tailwind-css.svg',
         },
       ],
-      link: 'https://d386g19k2b21z4.cloudfront.net/',
+      link: 'https://github.com/koodilauri/koodilauri.github.io',
     },
   }
   const { className } = props

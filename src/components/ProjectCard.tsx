@@ -30,15 +30,32 @@ function ProjectCardEl(props: IProps) {
             className=""
           />
         </ProjectImage>
-        <h3 className="font-bold text-3xl text-center py-3">
-          <Link href={project.link} passHref>
-            {project.title}
-          </Link>
-        </h3>
-        <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3 transition delay-150 duration-300 ease-in-out">
-          <summary>Details</summary>
-          <div className="mt-2 mx-2 text-base">{project.text}</div>
-        </ProjectDetails>
+        <div className="group h-16 mt-1 hover:h-auto">
+          <h3 className=" font-bold text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
+            <Link href={project.link} passHref>
+              <a className="flex flex-row justify-center">
+                {project.title}
+                <img
+                  src="/link.svg"
+                  alt="l"
+                  width={25}
+                  height={20}
+                  className="ml-2 mt-0.5 group-hover:animate-pulse"
+                />
+              </a>
+            </Link>
+            {/* <img
+              src="/right-arrow.svg"
+              alt="a"
+              width={25}
+              height={20}
+              className="transform ml-2 mt-0.5 group-hover:rotate-90 transition-all duration-300 ease-in-out"
+            /> */}
+          </h3>
+          <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3 transform group-hover:h-auto group-hover:scale-100 h-0 scale-0 transition-all duration-300 ease-in-out">
+            <div className="m-2 text-base">{project.text}</div>
+          </ProjectDetails>
+        </div>
         <div className="text-s font-thin flex flex-row flex-wrap justify-center">
           {project.tech.map(code => (
             <TechCard key={code.id} code={code} />
@@ -54,6 +71,6 @@ const Container = styled.div`
 const ProjectImage = styled.div`
   height: 15rem;
 `
-const ProjectDetails = styled.details``
+const ProjectDetails = styled.div``
 
 export const ProjectCard = styled(ProjectCardEl)``

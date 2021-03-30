@@ -12,6 +12,9 @@ module.exports = {
     extend: {
       fontSize: {
         '6xl': '4rem'
+      },
+      transitionProperty: {
+        'height': 'height'
       }
     }
   },
@@ -19,6 +22,9 @@ module.exports = {
     extend: {
       rotate: ['group-hover'],
       scale: ['group-hover'],
+      height: ['hover, group-hover, focus, group-focus'],
+      width: ['hover, group-hover, focus, group-focus'],
+      animation: ['hover, group-hover, focus, group-focus'],
     },
   },
   plugins: [],

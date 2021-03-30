@@ -7,7 +7,7 @@ interface IProps {
 function IntroEl(props: IProps) {
   const { className } = props
   return (
-    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max mx-auto p-4 text-2xl text-center">
+    <Container className="w-full md:w-11/12 lg:w-9/12 xl:w-7/12 h-max mx-auto text-lg sm:text-xl lg:text-2xl text-center">
       <div>
         Hello, I’m Lauri Koivisto; a master’s student of CCIS from Aalto
         University with a bachelor’s degree in Automation and Systems

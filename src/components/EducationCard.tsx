@@ -21,7 +21,7 @@ function EducationCardEl(props: IProps) {
         alt="School picture"
         width={198}
         height={198}
-        className="rounded bg-green-900 max-h-44 w-0 transform scale-0 lg:scale-100 lg:h-60 lg:w-44 self-center transition delay-150 duration-500 ease-in-out"
+        className="rounded bg-green-900 max-h-44 transform w-0 scale-0 lg:scale-100 lg:h-60 lg:w-44 self-center transition delay-150 duration-500 ease-in-out"
       />
       <div className="mt-2 mx-5">
         <div>

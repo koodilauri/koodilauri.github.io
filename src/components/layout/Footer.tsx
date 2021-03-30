@@ -9,32 +9,19 @@ interface IProps {
 function FooterLayout(props: IProps) {
   const { className } = props
   return (
-    <div className="w-full text-center border-t border-grey p-4 pin-b">
-      <Link href="/" passHref>
+    <Container className="w-full text-center font-light text-3xl p-10 pin-b shadow bg-gray-900 bg-opacity-50">
+      Made by Lauri Koivisto
+      {/* <Link href="/" passHref>
         <StyledLink>
           <b className="btn-purple">Back to top</b>
         </StyledLink>
-      </Link>
-    </div>
+      </Link> */}
+    </Container>
   )
 }
 
-const FooterContainer = styled.footer`
-  background: white;
-  position: absolute;
-  width: 100%;
+const Container = styled.div`
+  font-family: 'Raleway-Thin', sans-serif;
 `
-const NavWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-`
-const Nav = styled.nav`
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  position: relative;
-`
-const StyledLink = styled.a``
 
 export const Footer = FooterLayout

@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <Layout>
       <Header className="h-screen">
-        <h1 className="mt-img-mobile text-5xl md:mt-24 md:text-8xl">
+        <h1 className="mt-img-mobile text-5xl -mb-3 md:mt-44 sm:text-6xl lg:text-8xl">
           Lauri Koivisto
         </h1>
-        <div className="mt-8 flex flex-row justify-evenly">
+        <div className="my-8 flex flex-row justify-evenly">
           <a href="https://github.com/koodilauri">
             <img
               src="/GitHub-Mark-Light-64px.png"
               alt="github"
               width="64"
               height="64"
-              className="m-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
+              className="mx-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
             />
           </a>
           <a href="mailto:lakoivisto@gmail.com">
@@ -30,7 +30,7 @@ export default function Home() {
               alt="mailto"
               width="64"
               height="64"
-              className="m-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
+              className="mx-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
             />
           </a>
         </div>
@@ -49,7 +49,7 @@ const Header = styled.header`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: -3rem;
   & > h1 {
     font-weight: 600;
   }

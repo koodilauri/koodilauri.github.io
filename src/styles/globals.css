@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Raleway-Thin';
+  src: url('fonts/static/Raleway-Thin.ttf');
+}
+@font-face {
   font-family: 'Raleway';
   src: url('fonts/static/Raleway-Regular.ttf');
 }
