@@ -19,8 +19,8 @@ function ProjectCardEl(props: IProps) {
   return (
     <Container className="w-img-mobile md:w-img-desktop m-16 shadow bg-gray-900 bg-opacity-50">
       <div className="h-max ">
-        <ProjectImage className="h-50 w-19 relative ">
-          <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105"></div>
+        <ProjectImage className="group h-50 w-19 relative">
+          <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105 "></div>
           <div className="w-full h-full absolute top-0 left-0 rounded bg-purple-300 transform -rotate-3 scale-105 "></div>
           <Image
             src={project.image}
@@ -30,12 +30,12 @@ function ProjectCardEl(props: IProps) {
             className=""
           />
         </ProjectImage>
-        <h3 className="font-bold text-lg text-center py-3">
+        <h3 className="font-bold text-3xl text-center py-3">
           <Link href={project.link} passHref>
             {project.title}
           </Link>
         </h3>
-        <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3">
+        <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3 transition delay-150 duration-300 ease-in-out">
           <summary>Details</summary>
           <div className="mt-2 mx-2 text-base">{project.text}</div>
         </ProjectDetails>

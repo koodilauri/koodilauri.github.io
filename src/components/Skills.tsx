@@ -15,7 +15,7 @@ function SkillsEl(props: IProps) {
       <div className="text-base text-center items-center flex flex-col">
         <div>
           <h3>Languages</h3>
-          <div>C, Javascript, Matlab, Python</div>
+          <div>C, Javascript, Matlab, Python, Typescript</div>
         </div>
         <div>
           <h3>Frontend</h3>
@@ -27,10 +27,10 @@ function SkillsEl(props: IProps) {
         </div>
         <div>
           <h3>DevOps</h3>
-          <div>Docker, Github, Git</div>
+          <div>AWS, Docker, Git</div>
         </div>
         <a href="https://1drv.ms/b/s!AuBiEbJ3Ox0fiDLrwfCavsHRdJiA?e=2muTy9">
-          <div className=" w-40 py-2 px-5 bg-red-900 font-semibold rounded-lg shadow-md hover:bg-red-700">
+          <div className=" w-40 py-2 px-5 bg-red-900 font-semibold rounded-lg shadow-md hover:bg-red-700 transition delay-150 duration-300 ease-in-out transform scale-100 hover:scale-105">
             Resume
           </div>
         </a>

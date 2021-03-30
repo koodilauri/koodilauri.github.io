@@ -10,13 +10,13 @@ function EducationEl(props: IProps) {
   const education = {
     master: {
       degree: 'Master of Science in Technology',
-      image: '/logo-72899-1.png',
+      image: '/logo-35434-1.png',
       text:
         'I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing.',
       date: 'October 2017 - Present',
     },
     bachelor: {
-      degree: 'Bachelor of Science (Technology)',
+      degree: 'Bachelor of Science in Technology',
       image: '/logo-35434-1.png',
       text:
         'I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics.',
@@ -32,11 +32,11 @@ function EducationEl(props: IProps) {
   }
   return (
     <Container className="w-full h-auto items-center bg-gradient-to-b from-black">
-      <div className="mb-12">
+      <div className="mb-8">
         {/* <div className="w-80 h-8 mx-auto bg-green-900 relative top-20 z-0"></div> */}
-        <h2 className="text-center mb-4 text-6xl relative z-1">Education</h2>
+        <h2 className="text-center text-6xl">Education</h2>
       </div>
-      <CardWrapper className="w-1/2  m-auto mt-8 flex flex-col md:flex-row justify-evenly items-center flex-wrap">
+      <CardWrapper className="w-3/5  m-auto flex flex-col md:flex-row justify-evenly items-center flex-wrap">
         <EducationCard education={education.master} />
         <EducationCard education={education.bachelor} />
         <EducationCard education={education.graduate} />
@@ -46,9 +46,6 @@ function EducationEl(props: IProps) {
 }
 const Container = styled.div`
   & > h2 {
-    font-size: 3.75rem;
-    font-weight: 500;
-    margin: 0 0 20px 0;
     letter-spacing: 2px;
     // text-transform: uppercase;
   }

@@ -16,7 +16,10 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      rotate: ['group-hover'],
+      scale: ['group-hover'],
+    },
   },
   plugins: [],
 }

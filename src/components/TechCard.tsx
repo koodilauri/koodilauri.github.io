@@ -15,7 +15,7 @@ function TechCardEl(props: IProps) {
   const { code } = props
   return (
     <Container
-      className="m-2 px-2 py-1 text-xl rounded shadow bg-primary hover:bg-purple-700 flex flex-row"
+      className="m-2 px-2 py-1 text-xl rounded shadow bg-primary hover:bg-purple-700 flex flex-row transition delay-150 duration-300 ease-in-out"
       key={code.id}
     >
       <div className="mt-1 mr-0.5 w-5 h-5">

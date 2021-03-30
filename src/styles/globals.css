@@ -7,7 +7,11 @@
   src: url('fonts/static/Raleway-Regular.ttf');
 }
 @font-face {
-  font-family: 'Rubik-bold';
+  font-family: 'Rubik-SemiBold';
+  src: url('fonts/static/Rubik-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Rubik-Bold';
   src: url('fonts/static/Rubik-Bold.ttf');
 }
 @font-face {
@@ -15,12 +19,12 @@
   src: url('fonts/static/Rubik-Regular.ttf');
 }
 html {
-  font-size: 18px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
 h1 {
-  font-family: 'Rubik-bold', sans-serif;
+  font-family: 'Rubik-Bold', sans-serif;
 }
 h2,
 h3,

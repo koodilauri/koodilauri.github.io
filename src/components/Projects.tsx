@@ -45,7 +45,7 @@ function ProjectsEl(props: IProps) {
         {
           id: 2,
           name: 'Node.js',
-          icon: '/node.png',
+          icon: '/node.svg',
         },
         {
           id: 3,
@@ -56,7 +56,7 @@ function ProjectsEl(props: IProps) {
       link: 'http://go.vaisala.com/keravaradar/',
     },
     monsterhunter: {
-      title: 'Monster Hunter Generations fansite',
+      title: 'Monster Hunter fansite',
       image: '/hunters-log.png',
       text: 'Fansite for submitting speedruns for a videogame',
       tech: [
@@ -68,12 +68,36 @@ function ProjectsEl(props: IProps) {
         {
           id: 2,
           name: 'Node.js',
-          icon: '/node.png',
+          icon: '/node.svg',
         },
         {
           id: 3,
           name: 'React',
           icon: '/react.svg',
+        },
+      ],
+      link: 'https://d386g19k2b21z4.cloudfront.net/',
+    },
+    portfolio: {
+      title: 'Personal portfolio',
+      image: '/hunters-log.png',
+      text:
+        'I developed and designed a website using Next.js and tailwindCSS to showcase my portfolio in a more visually appealing format.',
+      tech: [
+        {
+          id: 1,
+          name: 'Typescript',
+          icon: '/typescript.svg',
+        },
+        {
+          id: 2,
+          name: 'Next.js',
+          icon: '/next.png',
+        },
+        {
+          id: 3,
+          name: 'Tailwind',
+          icon: '/tailwind-css.svg',
         },
       ],
       link: 'https://d386g19k2b21z4.cloudfront.net/',
@@ -90,6 +114,7 @@ function ProjectsEl(props: IProps) {
         <ProjectCard project={projects.thesis} />
         <ProjectCard project={projects.vaisala} />
         <ProjectCard project={projects.monsterhunter} />
+        <ProjectCard project={projects.portfolio} />
       </CardWrapper>
     </Container>
   )

@@ -21,7 +21,7 @@ export default function Home() {
               alt="github"
               width="64"
               height="64"
-              className="m-5"
+              className="m-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
             />
           </a>
           <a href="mailto:lakoivisto@gmail.com">
@@ -30,7 +30,7 @@ export default function Home() {
               alt="mailto"
               width="64"
               height="64"
-              className="m-5"
+              className="m-5 transform scale-100 scale-110 hover:scale-125 rounded-full transition duration-300 ease-in-out border-4 border-black hover:border-purple-900"
             />
           </a>
         </div>
