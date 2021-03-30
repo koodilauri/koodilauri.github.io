@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Head from 'next/head'
 
 import { Footer } from './Footer'
-import { Portfolio } from '../Portfolio'
 
 interface IProps {
   children: React.ReactNode
