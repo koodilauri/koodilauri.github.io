@@ -10,14 +10,14 @@ function EducationEl(props: IProps) {
   const education = {
     master: {
       degree: 'Master of Science in Technology',
-      image: '/logo-35434-1.png',
+      image: '/aalto.png',
       text:
         'I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing.',
       date: 'October 2017 - Present',
     },
     bachelor: {
       degree: 'Bachelor of Science in Technology',
-      image: '/logo-35434-1.png',
+      image: '/aalto.png',
       text:
         'I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics.',
       date: 'October 2014 - 2017',

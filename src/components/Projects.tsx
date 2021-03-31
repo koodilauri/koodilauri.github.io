@@ -34,7 +34,8 @@ function ProjectsEl(props: IProps) {
     vaisala: {
       title: 'Vaisala project',
       image: '/vaisala-project.png',
-      text: 'Summer project for vaisala',
+      text:
+        "Summer job project for vaisala, a simple webpage for displaying Kerava's weather radar data from their IRIS Focus Software. Server and frontend run in Docker containers",
       tech: [
         {
           id: 1,
@@ -57,7 +58,8 @@ function ProjectsEl(props: IProps) {
     monsterhunter: {
       title: 'Monster Hunter fansite',
       image: '/hunters-log.png',
-      text: 'Fansite for submitting speedruns for a videogame',
+      text:
+        'Fansite for submitting speedruns for a videogame. The frontend is delivered through AWS CloudFront and the application server and database is in Heroku.',
       tech: [
         {
           id: 1,

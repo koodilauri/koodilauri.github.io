@@ -43,16 +43,11 @@ function ProjectCardEl(props: IProps) {
                 />
               </a>
             </Link>
-            {/* <img
-              src="/right-arrow.svg"
-              alt="a"
-              width={25}
-              height={20}
-              className="transform ml-2 mt-0.5 group-hover:rotate-90 transition-all duration-300 ease-in-out"
-            /> */}
           </h3>
-          <ProjectDetails className="text-center bg-gray-900 hover:bg-gray-800 py-3 transform group-hover:h-auto group-hover:scale-100 h-0 scale-0 transition-all duration-300 ease-in-out">
-            <div className="m-2 text-base">{project.text}</div>
+          <ProjectDetails className="grid text-center bg-gray-900 hover:bg-gray-800 py-3 transform group-hover:scale-100 scale-0 group-hover:h-36 h-0 transition-all duration-500 ease-in-out">
+            <div className="place-self-center m-3 text-base transform group-hover:scale-100 scale-0 transition-all delay-300 duration-300 ease-in">
+              {project.text}
+            </div>
           </ProjectDetails>
         </div>
         <div className="text-s font-thin flex flex-row flex-wrap justify-center">
