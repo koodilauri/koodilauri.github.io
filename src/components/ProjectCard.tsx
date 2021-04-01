@@ -16,20 +16,20 @@ interface IProps {
 function ProjectCardEl(props: IProps) {
   const { className, project } = props
   return (
-    <Container className="w-img-mobile md:w-img-desktop m-16 shadow bg-gray-900 bg-opacity-50">
-      <ProjectImageWrap className="group w-img-mobile md:h-60 md:w-96 relative">
+    <Container className="w-52 sm:w-96  m-16 shadow bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center ">
+      <ProjectImageWrap className="group h-32 sm:h-60 w-52 sm:w-96 relative">
         <div className="z-0 w-full h-full absolute top-0 left-0 rounded bg-purple-900 transform rotate-3 scale-105 "></div>
         <div className="z-0 w-full h-full absolute top-0 left-0 rounded bg-purple-300 transform -rotate-3 scale-105 "></div>
         <ProjectImage
           src={project.image}
           alt="Project picture"
-          className="z-10 absolute h-60 w-96 rounded"
+          className="z-10 absolute h-32 sm:h-60 w-52 sm:w-96 rounded"
         />
       </ProjectImageWrap>
       <div className="group h-auto mt-1">
-        <h3 className=" font-bold text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
+        <h3 className=" font-bold text-xl sm:text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
           <Link href={project.link} passHref>
-            <a className="flex flex-row justify-center">
+            <a className="flex flex-row">
               {project.title}
               <img
                 src="/link.svg"
@@ -55,14 +55,10 @@ function ProjectCardEl(props: IProps) {
     </Container>
   )
 }
-const Container = styled.div`
-  width: 24rem;
-`
-const ProjectImageWrap = styled.div`
-  height: 15rem;
-`
+const Container = styled.div``
+const ProjectImageWrap = styled.div``
 const ProjectImage = styled.img`
-  object-fit: cover;
+  object-fit: fit;
 `
 const ProjectDetails = styled.div``
 
