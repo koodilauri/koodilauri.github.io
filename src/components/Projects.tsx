@@ -108,8 +108,10 @@ function ProjectsEl(props: IProps) {
   return (
     <Container className="w-full h-auto min-h-screen bg-purple-900 bg-opacity-10 pt-40">
       <div>
-        <div className="w-64 h-8 mx-auto bg-purple-900 relative top-20 z-0"></div>
-        <h2 className="text-center mb-4 text-6xl relative z-1">Projects</h2>
+        <div className="w-52 h-6 sm:w-72 sm:h-8 mx-auto bg-purple-900 relative top-12 sm:top-16 z-0"></div>
+        <h2 className="text-center text-5xl sm:text-6xl relative z-1">
+          Projects
+        </h2>
       </div>
       <CardWrapper className="w-full mt-8 flex flex-row justify-evenly flex-wrap items-start">
         <ProjectCard project={projects.thesis} />

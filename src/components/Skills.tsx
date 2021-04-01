@@ -8,9 +8,11 @@ function SkillsEl(props: IProps) {
   const { className } = props
   return (
     <Container className="w-full m-auto bg-gradient-to-t from-black pt-40">
-      <div>
-        <div className="w-44 h-8 mx-auto bg-red-900 relative top-20 z-0"></div>
-        <h2 className="text-center mb-8 text-6xl relative z-1">Skills</h2>
+      <div className="mb-12">
+        <div className="w-32 h-6 sm:w-44 sm:h-8 mx-auto bg-red-900 relative top-12 sm:top-16 z-0"></div>
+        <h2 className="text-center text-5xl sm:text-6xl relative z-1">
+          Skills
+        </h2>
       </div>
       <div className="text-base text-center items-center flex flex-col space-y-6">
         <SKillBlock>
