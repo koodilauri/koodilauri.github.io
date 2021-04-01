@@ -28,8 +28,8 @@ function ProjectCardEl(props: IProps) {
       </ProjectImageWrap>
       <div className="group h-auto mt-1">
         <h3 className=" font-bold text-xl sm:text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
-          <Link href={project.link} passHref>
-            <a className="flex flex-row">
+          <Link href={project.link} passHref >
+            <a className="flex flex-row" target="_blank" rel="noopener noreferrer">
               {project.title}
               <img
                 src="/link.svg"
