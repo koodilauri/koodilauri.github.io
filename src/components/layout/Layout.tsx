@@ -12,7 +12,7 @@ export const Layout = (props: IProps) => {
   return (
     <Wrapper>
       <Head>
-        <title>Portfolio</title>
+        <title>Lauri Koivisto</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>{props.children}</Container>
@@ -30,6 +30,4 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
 `
-const Container = styled.main`
-  margin: 2rem 0rem;
-`
+const Container = styled.main``

@@ -13,7 +13,7 @@ interface IProps {
 function EducationCardEl(props: IProps) {
   const { className, education } = props
   return (
-    <Container className="w-full mb-12 flex md:flex-row rounded bg-gray-900 transform scale-100 hover:scale-105 hover:bg-opacity-80 bg-opacity-60 shadow transition delay-150 duration-500 ease-in-out">
+    <Container className="w-full flex md:flex-row rounded bg-gray-900 transform scale-100 hover:scale-105 hover:bg-opacity-80 bg-opacity-60 shadow transition delay-150 duration-500 ease-in-out">
       <img
         src={education.image}
         alt="School picture"

@@ -106,12 +106,12 @@ function ProjectsEl(props: IProps) {
   }
   const { className } = props
   return (
-    <Container className="w-full h-auto min-h-screen bg-purple-900 bg-opacity-10">
+    <Container className="w-full h-auto min-h-screen bg-purple-900 bg-opacity-10 pt-40">
       <div>
-        {/* <div className="w-64 h-8 mx-auto bg-purple-900 relative top-20 z-0"></div> */}
+        <div className="w-64 h-8 mx-auto bg-purple-900 relative top-20 z-0"></div>
         <h2 className="text-center mb-4 text-6xl relative z-1">Projects</h2>
       </div>
-      <CardWrapper className="w-full mt-8 flex flex-col md:flex-row justify-evenly flex-wrap items-start">
+      <CardWrapper className="w-full mt-8 flex flex-row justify-evenly flex-wrap items-start">
         <ProjectCard project={projects.thesis} />
         <ProjectCard project={projects.vaisala} />
         <ProjectCard project={projects.monsterhunter} />

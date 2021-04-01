@@ -33,10 +33,10 @@ function EducationEl(props: IProps) {
   return (
     <Container className="w-full h-auto items-center bg-gradient-to-b from-black">
       <div className="mb-8">
-        {/* <div className="w-80 h-8 mx-auto bg-green-900 relative top-20 z-0"></div> */}
-        <h2 className="text-center text-6xl">Education</h2>
+        <div className="w-80 h-8 mx-auto bg-green-900 relative top-20 z-0"></div>
+        <h2 className="text-center text-6xl relative z-1">Education</h2>
       </div>
-      <CardWrapper className="w-3/5  m-auto flex flex-col md:flex-row justify-evenly items-center flex-wrap">
+      <CardWrapper className="w-3/5 m-auto flex flex-col space-y-10 justify-evenly items-center flex-wrap">
         <EducationCard education={education.master} />
         <EducationCard education={education.bachelor} />
         <EducationCard education={education.graduate} />
