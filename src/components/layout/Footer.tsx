@@ -9,7 +9,7 @@ interface IProps {
 function FooterLayout(props: IProps) {
   const { className } = props
   return (
-    <Container className="text-center font-light text-xl sm:text-3xl py-10 pin-b sm:w-96 mx-auto mt-96 border-t">
+    <Container className="text-center font-light text-xl sm:text-3xl py-10 pin-b px-4 sm:px-0 sm:w-96 mx-auto mt-96 border-t">
       Made by Lauri Koivisto
       {/* <Link href="/" passHref>
         <StyledLink>
