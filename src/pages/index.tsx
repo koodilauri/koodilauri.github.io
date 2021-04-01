@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <Header className="flex flex-col items-center mb-80 space-y-8">
-        <h1 className="mt-img-mobile text-5xl mt-20 md:mt-52 sm:text-6xl lg:text-8xl">
+        <h1 className="mt-img-mobile text-center text-5xl mt-20 md:mt-52 sm:text-6xl lg:text-8xl">
           Lauri Koivisto
         </h1>
         <div className="flex flex-row justify-evenly space-x-10">

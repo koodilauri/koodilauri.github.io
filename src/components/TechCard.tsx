@@ -13,10 +13,10 @@ function TechCardEl(props: IProps) {
   const { code } = props
   return (
     <Container
-      className="px-2 py-1 text-xl rounded bg-purple-900 hover:bg-purple-700 flex flex-row transition delay-150 duration-150 ease-in-out transform hover:scale-105"
+      className="items-center justify-center sm:mx-0 mx-2 px-2 py-1 text-xl rounded bg-purple-900 hover:bg-purple-700 flex flex-row  transition delay-150 duration-150 ease-in-out transform hover:scale-105"
       key={code.id}
     >
-      <div className="mt-1 mr-0.5 w-5 h-5 flex items-stretch">
+      <div className="mr-0.5 w-5 h-5 flex items-stretch">
         <img
           src={code.icon}
           alt="Project picture"
@@ -25,7 +25,7 @@ function TechCardEl(props: IProps) {
           className="self-center"
         />
       </div>
-      <div className="mb-0">{code.name}</div>
+      <div className="text-center">{code.name}</div>
     </Container>
   )
 }

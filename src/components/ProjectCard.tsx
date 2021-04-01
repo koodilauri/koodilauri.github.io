@@ -41,12 +41,12 @@ function ProjectCardEl(props: IProps) {
             </a>
           </Link>
         </h3>
-        <ProjectDetails className="grid text-center bg-gray-900 hover:bg-gray-800 py-0 transform group-hover:scale-100 scale-0 group-hover:h-36 h-0 transition-all duration-500 ease-in-out">
+        <ProjectDetails className="grid text-center bg-gray-900 hover:bg-gray-800 py-5 sm:py-0 transform group-hover:scale-100 scale-0 group-hover:h-auto sm:group-hover:h-36 h-0 transition-all duration-500 ease-in-out">
           <div className="place-self-center mx-3 text-base transform group-hover:scale-100 scale-0 transition-all delay-300 duration-300 ease-in">
             {project.text}
           </div>
         </ProjectDetails>
-        <div className="text-s my-4 font-thin flex flex-row flex-wrap justify-center space-x-4">
+        <div className="text-s my-4 font-thin flex flex-col sm:flex-row flex-wrap sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           {project.tech.map(code => (
             <TechCard key={code.id} code={code} />
           ))}
