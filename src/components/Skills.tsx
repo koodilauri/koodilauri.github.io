@@ -31,7 +31,11 @@ function SkillsEl(props: IProps) {
           <h3>DevOps</h3>
           <div>AWS, Docker, Git</div>
         </SKillBlock>
-        <a href="https://1drv.ms/b/s!AuBiEbJ3Ox0fiDLrwfCavsHRdJiA?e=2muTy9" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://1drv.ms/b/s!AuBiEbJ3Ox0fiDLrwfCavsHRdJiA?e=2muTy9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className=" w-40 py-2 px-5 bg-red-900 font-semibold rounded-lg shadow-md hover:bg-red-700 transition delay-150 duration-300 ease-in-out transform scale-100 hover:scale-105">
             Resume
           </div>

@@ -14,7 +14,11 @@ export default function Home() {
           Lauri Koivisto
         </h1>
         <div className="flex flex-row justify-evenly space-x-10">
-          <a href="https://github.com/koodilauri" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/koodilauri"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="/GitHub-Mark-Light-64px.png"
               alt="github"

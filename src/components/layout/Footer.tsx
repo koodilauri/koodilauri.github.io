@@ -9,7 +9,7 @@ interface IProps {
 function FooterLayout(props: IProps) {
   const { className } = props
   return (
-    <Container className="w-full text-center font-light text-3xl p-10 pin-b mt-96 bg-opacity-50">
+    <Container className="text-center font-light text-xl sm:text-3xl py-10 pin-b sm:w-96 mx-auto mt-96 border-t">
       Made by Lauri Koivisto
       {/* <Link href="/" passHref>
         <StyledLink>
@@ -22,7 +22,7 @@ function FooterLayout(props: IProps) {
 
 const Container = styled.footer`
   font-family: 'Raleway-Thin', sans-serif;
-  background-color: #292929;
+  border-color: #292929;
 `
 
 export const Footer = FooterLayout
