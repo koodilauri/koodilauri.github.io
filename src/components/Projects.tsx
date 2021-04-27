@@ -103,6 +103,30 @@ function ProjectsEl(props: IProps) {
       ],
       link: 'https://github.com/koodilauri/koodilauri.github.io',
     },
+    todo: {
+      title: 'Todo App',
+      image: '/todo.png',
+      text:
+        'I made a simple task list website with Next.js and tailwindCSS which displays a list of tasks to be completed.',
+      tech: [
+        {
+          id: 1,
+          name: 'Typescript',
+          icon: '/typescript.svg',
+        },
+        {
+          id: 2,
+          name: 'Next.js',
+          icon: '/next-js.svg',
+        },
+        {
+          id: 3,
+          name: 'Tailwind',
+          icon: '/tailwind-css.svg',
+        },
+      ],
+      link: 'https://my-todo-app-six.vercel.app/',
+    },
   }
   const { className } = props
   return (
@@ -118,6 +142,7 @@ function ProjectsEl(props: IProps) {
         <ProjectCard project={projects.vaisala} />
         <ProjectCard project={projects.monsterhunter} />
         <ProjectCard project={projects.portfolio} />
+        <ProjectCard project={projects.todo} />
       </CardWrapper>
     </Container>
   )
