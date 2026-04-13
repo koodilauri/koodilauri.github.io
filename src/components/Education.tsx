@@ -11,22 +11,19 @@ function EducationEl(props: IProps) {
     master: {
       degree: 'Master of Science in Technology',
       image: '/aalto.png',
-      text:
-        'I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing.',
+      text: 'I am studying Computer, Communication and Information Sciences in the field of Signal, Speech and Language Processing.',
       date: 'October 2017 - Present',
     },
     bachelor: {
       degree: 'Bachelor of Science in Technology',
       image: '/aalto.png',
-      text:
-        'I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics.',
+      text: 'I finished my bachelor’s degree in Automation and System technology in 2017. I wrote my thesis about Symbol Grounding in Robotics.',
       date: 'October 2014 - 2017',
     },
     graduate: {
       degree: 'Graduate student',
       image: '/hyvinkaa-logo.jpg',
-      text:
-        'I wrote extended mathematics, physics, english, social studies and finnish.',
+      text: 'I wrote extended mathematics, physics, english, social studies and finnish.',
       date: 'August 2010 - June 2013',
     },
   }

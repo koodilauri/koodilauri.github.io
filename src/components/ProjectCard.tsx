@@ -28,21 +28,20 @@ function ProjectCardEl(props: IProps) {
       </ProjectImageWrap>
       <div className="group h-auto mt-1">
         <h3 className=" font-bold text-xl sm:text-3xl text-center py-3 bg-gray-900 hover:bg-gray-800 flex flex-row justify-center">
-          <Link href={project.link} passHref>
-            <a
-              className="flex flex-row"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {project.title}
-              <img
-                src="/link.svg"
-                alt="l"
-                width={25}
-                height={20}
-                className="mr-2 sm:mr-0 ml-2 mt-0.5 group-hover:animate-pulse"
-              />
-            </a>
+          <Link
+            href={project.link}
+            className="flex flex-row"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {project.title}
+            <img
+              src="/link.svg"
+              alt="l"
+              width={25}
+              height={20}
+              className="mr-2 sm:mr-0 ml-2 mt-0.5 group-hover:animate-pulse"
+            />
           </Link>
         </h3>
         <ProjectDetails className="grid text-center bg-gray-900 hover:bg-gray-800 group-hover:py-5 sm:py-0 transform group-hover:scale-100 scale-0 group-hover:h-auto sm:group-hover:h-36 h-0 transition-all duration-500 ease-in-out">

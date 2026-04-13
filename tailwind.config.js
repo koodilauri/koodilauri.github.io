@@ -1,26 +1,17 @@
 module.exports = {
-  purge: [
+  content: [
     './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
+    './src/**/*.{js,jsx,ts,tsx}',
   ],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
       fontSize: {
-        '6xl': '4rem'
+        '6xl': '4rem',
       },
       transitionProperty: {
-        'height': 'height'
-      }
-    }
-  },
-  variants: {
-    extend: {
-      rotate: ['group-hover'],
-      scale: ['group-hover'],
-      height: ['hover, group-hover, focus, group-focus'],
-      width: ['hover, group-hover, focus, group-focus'],
-      animation: ['hover, group-hover, focus, group-focus'],
+        height: 'height',
+      },
     },
   },
   plugins: [],

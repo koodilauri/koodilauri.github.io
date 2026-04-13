@@ -10,8 +10,7 @@ function ProjectsEl(props: IProps) {
     thesis: {
       title: 'Thesis project',
       image: '/proposed-CNN-system.jpg',
-      text:
-        "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
+      text: "Convolutional Neural Network (CNN) model for speaker recognition. Models were trained with Triton, Aalto University's high-performance computing cluster.",
       tech: [
         {
           id: 1,
@@ -34,8 +33,7 @@ function ProjectsEl(props: IProps) {
     vaisala: {
       title: 'Vaisala project',
       image: '/vaisala-project.png',
-      text:
-        "Summer job project for vaisala, a simple webpage for displaying Kerava's weather radar data from their IRIS Focus Software. Server and frontend run in Docker containers",
+      text: "Summer job project for vaisala, a simple webpage for displaying Kerava's weather radar data from their IRIS Focus Software. Server and frontend run in Docker containers",
       tech: [
         {
           id: 1,
@@ -58,8 +56,7 @@ function ProjectsEl(props: IProps) {
     monsterhunter: {
       title: 'Monster Hunter fansite',
       image: '/hunters-log.png',
-      text:
-        'Fansite for submitting speedruns for a videogame. The frontend is delivered through AWS CloudFront and the application server and database is in Heroku.',
+      text: 'Fansite for submitting speedruns for a videogame. The frontend is delivered through AWS CloudFront and the application server and database is in Heroku.',
       tech: [
         {
           id: 1,
@@ -82,8 +79,7 @@ function ProjectsEl(props: IProps) {
     portfolio: {
       title: 'Personal portfolio',
       image: '/portfolio.png',
-      text:
-        'I developed and designed a website using Next.js and tailwindCSS to showcase my portfolio in a more visually appealing format.',
+      text: 'I developed and designed a website using Next.js and tailwindCSS to showcase my portfolio in a more visually appealing format.',
       tech: [
         {
           id: 1,
@@ -106,8 +102,7 @@ function ProjectsEl(props: IProps) {
     todo: {
       title: 'Todo App',
       image: '/todo.png',
-      text:
-        'I made a simple task list website with Next.js and tailwindCSS which displays a list of tasks to be completed.',
+      text: 'I made a simple task list website with Next.js and tailwindCSS which displays a list of tasks to be completed.',
       tech: [
         {
           id: 1,
