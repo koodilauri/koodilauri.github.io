@@ -32,7 +32,7 @@ function SkillsEl(props: IProps) {
           <div>AWS, Docker, Git</div>
         </SKillBlock>
         <a
-          href="https://1drv.ms/b/s!AuBiEbJ3Ox0fiDLrwfCavsHRdJiA?e=2muTy9"
+          href="https://koodilauri.github.io/laurikoivisto-cv/"
           target="_blank"
           rel="noopener noreferrer"
         >
